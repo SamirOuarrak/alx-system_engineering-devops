@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1A | awk '{print $0"/" }' | sed '1s/^/.\n..\n/' | LC_COLLATE=C sort -df | paste -sd ,
