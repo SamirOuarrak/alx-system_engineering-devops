@@ -1,15 +1,2 @@
 #!/bin/bash
-
-# Define the URL of the Star Wars Episode IV movie in ASCII format
-url="telnet://towel.blinkenlights.nl"
-
-# Check if telnet is installed
-if ! command -v telnet &> /dev/null
-then
-    echo "Error: telnet is not installed."
-    exit 1
-fi
-
-# Start playing the movie
-telnet $url
-
+telnet "telnet://towel.blinkenlights.nl"
